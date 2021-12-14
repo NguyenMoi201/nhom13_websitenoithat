@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./asset/css/log_in.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="log_in">
+            <h2>Đăng nhập</h2>
+            <div class="username-input">
+                <i class="far fa-user"></i>
+                <input type="text" name="username" placeholder="Tên đăng nhập">
+            </div>
+            <div class="password-input">
+                <i class="fas fa-key"></i>
+                <input type="password" name="password"  id="pass" placeholder="Mật khẩu">
+                <div id="eye_icon" onmouseover="check()" onmouseout="hide()">
+                    <i class="far fa-eye" id="appear"></i>
+                </div>
+            </div>
+            <input type="submit" value="Đăng nhập" class="button_submit">
+            <span><a href="">Quên mật khẩu</a></span>
+
+            <span>Bạn đã có tài khoản chưa? Đăng ký <a href="">Tại đây</a></span>
+        </form>
+    </div>
+</body>
+</html>
+
+<script src="./asset/js/log_in.js"></script>
+
+    

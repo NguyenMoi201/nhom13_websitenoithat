@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --bg1:#944db1;
+    --bg2:#2b72a1;
+    --text:#26ade4;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right,var(--bg1), var(--text));
+    display:flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    font-size: 20px;
+
+}
+.register{
+    width: 450px;
+    height: 675px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+
+}
+.register>h2{
+    margin-bottom: 30px;
+}
+.form-group{
+    display:flex;
+    flex-direction: column;
+    margin-top: 16px;
+    
+    
+
+}
+.group-text-icon{
+    display: flex;
+    border:2px solid rgba(143, 125, 125, 0.667);
+    border-radius: 5px;
+    padding: 8px;
+    
+}
+.group-text-icon>input{
+    flex-grow: 1;
+    border:none;
+    outline: 0;
+    height: 100%;
+    background:transparent;
+
+}
+.group-text-icon i{
+    padding:0px 10px 0px 0px;
+}
+.form-message{
+ 
+    text-align: left;
+    padding: 0px 8px;
+    font-size: 12px;
+    color:red;
+ 
+}
+#eye_icon i,#eye_icon2 i{
+    padding: 0px;
+}
+
+.button_submit{
+    width: 100%;
+    margin: 40px 0px 30px 0px;
+    padding: 12px;
+    border-radius: 5px;
+    color:#FFF;
+    background-color:rgb(107, 44, 180);
+    cursor: pointer;
+    /* height:30px; */
+
+}
+.separator{
+    /* display: flex; */
+    text-align: center;
+     overflow: hidden;
+   
+}
+.separator>span{
+    position: relative;
+    display: inline-block;
+   
+
+}
+.separator>span::before,
+.separator>span::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 9999px;
+    background-color: #000;
+    top:50%;
+    display: block;
+
+}
+.separator>span::before{
+    left: 100%;
+    margin-left: 10px;
+    
+}
+.separator>span::after{
+    right:100%;
+    margin-right: 10px;
+}
+
+
+.quick_login{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.quick_login i{
+    padding:0px 10px 0px;
+}
+.facebook{
+    margin-top: 20px;
+
+    background-color: rgb(91, 91, 238);
+}
+.google{
+    background-color: red;
+
+}

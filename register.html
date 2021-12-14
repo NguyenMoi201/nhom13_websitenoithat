@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="./asset/css/register.css">
+    
+    <title>Đăng ký</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="register"  id ="create-user" name="create_user">
+            <h2>Đăng ký tài khoản</h2> 
+            <div class="form-group">
+                <div class="group-text-icon">
+                    <i class="far fa-user"></i>
+                    <input type="text" id="fullname" name="username" placeholder="Tên đăng nhập" class="text-input">
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="group-text-icon">
+                    <i class="far fa-envelope"></i>
+                    <input type="text" id ="email" name="email" placeholder="Nhập dịa chỉ email" class="text-input">
+                </div>
+                <span class="form-message"></span>
+            </div>
+
+            <div class="form-group">
+                <div class="group-text-icon">
+                    <i class="fas fa-key"></i>
+                    <input type="password" id ="password" name="password" placeholder="Mật khẩu" class="text-input">
+                </div>
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">
+                <div class="group-text-icon">
+                    <i class="fas fa-key"></i>
+                    <input type="password" id="password_confirm " name="password_again" placeholder="Nhập lại mật khẩu" class="text-input">
+                </div>
+                <span class="form-message"></span>
+            </div>
+            
+            
+            <button  class="button_submit" onsubmit="validate();">Đăng ký</button>
+            <!-- <span>hoặc</span><hr> -->
+            <div class="separator">
+                <span>hoặc</span>
+            </div>
+
+            <div class="quick_login facebook">
+                <div class="logo">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="text">Đăng nhập bằng Facebook</div>
+
+
+            </div>
+            <div class="quick_login google">
+                <div class="logo">
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+                <div class="text">Đăng nhập bằng Google</div>
+            </div>
+           
+        
+            
+        </form>
+    </div>
+</body>
+</html>
+<script src="./asset/js/register.js"></script>
+<!-- <script>
+
+  // Mong muốn của chúng ta
+  Validator({
+    form: 'create-user',
+    formGroupSelector: '.form-group',
+    errorSelector: '.form-message',
+    rules: [
+      Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
+      Validator.isEmail('#email'),
+      Validator.minLength('#password', 6),
+      Validator.isRequired('#password-confirm'),
+      Validator.isConfirmed('#password-confirm', function () {
+        return document.querySelector('#form-1 #password').value;
+      }, 'Mật khẩu nhập lại không chính xác')
+    ],
+    onSubmit: function (data) {
+      // Call API
+      console.log(data);
+    }
+  });
+
+</script> -->
